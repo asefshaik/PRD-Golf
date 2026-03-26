@@ -5,7 +5,7 @@ import Layout from './components/Layout'
 // Pages
 import Landing from './pages/Landing'
 import Login from './pages/Login'
-import Signup from './pages/register'
+import Signup from './pages/Signup'
 import Charities from './pages/Charities'
 import Dashboard from './pages/Dashboard'
 import Scores from './pages/Scores'
