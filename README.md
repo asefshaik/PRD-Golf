@@ -186,38 +186,7 @@ Frontend runs on `http://localhost:5173`
 - **Random**: Standard lottery selection
 - **Algorithmic**: Weighted by score frequency for fairness
 
-## Key API Endpoints
-
-### Authentication
-
-- `POST /api/auth/register` - User registration
-- `POST /api/auth/login` - User login
-- `POST /api/auth/sync` - Sync user to backend
-
-### Subscriptions
-
-- `GET /api/subscriptions/status` - Get subscription status
-- `POST /api/subscriptions/checkout` - Create checkout session
-- `POST /api/subscriptions/confirm` - Confirm subscription
-
-### Scores
-
-- `GET /api/scores` - List user scores
-- `POST /api/scores` - Submit new score
-
-### Draws
-
-- `GET /api/draws` - List all draws
-- `POST /api/draws/execute` - Execute a draw
-- `POST /api/draws/simulate` - Simulate draw (no save)
-
-### Admin
-
-- `GET /api/admin/analytics` - Dashboard analytics
-- `GET /api/admin/users` - List all users
-- `GET /api/admin/draws/config` - Draw configuration
-- `POST /api/admin/charities` - Manage charities
-- `GET /api/admin/winners` - List winners
+ - List winners
 
 ## Database Schema
 
