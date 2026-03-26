@@ -79,7 +79,7 @@ export default function AdminPanel() {
 
   const handleMarkPayoutComplete = async (id) => {
     try {
-      await api.put(`/admin/winners/${id}/payout`, { completed: true })
+      await api.put(`/admin/winners/${id}/payout`)
       loadTabData('winners')
       fetchDashboardData()
       alert("Payout marked as completed")
@@ -108,7 +108,7 @@ export default function AdminPanel() {
   const handleSimulateDraw = async (drawType) => {
     try {
       setSubmitting(true)
-      const res = await api.post('/admin/draws/simulate', { drawType })
+      const res = await api.post(`/admin/draws/simulate?drawType=${drawType}`)
       setDrawSimulation(res.data.data)
       setShowSimulation(true)
     } catch (e) {
@@ -132,7 +132,7 @@ export default function AdminPanel() {
     
     try {
       setSubmitting(true)
-      const res = await api.post('/admin/draws/execute', { drawType })
+      const res = await api.post(`/admin/draws/execute?drawType=${drawType}`)
       setExecutedDraw(res.data.data)
       alert("Draw executed successfully! Results below.")
       fetchDrawConfig()
