@@ -190,7 +190,7 @@ Frontend runs on `http://localhost:5173`
 
 ### Authentication
 
-- `POST /api/auth/signup` - User registration
+- `POST /api/auth/register` - User registration
 - `POST /api/auth/login` - User login
 - `POST /api/auth/sync` - Sync user to backend
 
@@ -280,4 +280,3 @@ The project demonstrates full-stack development capabilities including:
 For issues or questions about the implementation, refer to the API documentation or check the admin dashboard for live analytics.
 
 ---
-

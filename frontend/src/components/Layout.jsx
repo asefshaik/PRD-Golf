@@ -46,7 +46,7 @@ export default function Layout() {
             ) : (
               <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginLeft: '1rem', paddingLeft: '1rem', borderLeft: '1px solid var(--border)' }}>
                 <Link to="/login" style={{ fontWeight: '500' }}>Log In</Link>
-                <Link to="/signup" className="btn btn-primary" style={{ padding: '0.5rem 1rem' }}>Sign Up</Link>
+                <Link to="/register" className="btn btn-primary" style={{ padding: '0.5rem 1rem' }}>Sign Up</Link>
               </div>
             )}
           </nav>

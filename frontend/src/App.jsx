@@ -5,7 +5,7 @@ import Layout from './components/Layout'
 // Pages
 import Landing from './pages/Landing'
 import Login from './pages/Login'
-import Signup from './pages/Signup'
+import Signup from './pages/register'
 import Charities from './pages/Charities'
 import Dashboard from './pages/Dashboard'
 import Scores from './pages/Scores'
@@ -38,7 +38,7 @@ function AppRoutes() {
         {/* Public Routes */}
         <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/register" element={<Signup />} />
         <Route path="/charities" element={<Charities />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />

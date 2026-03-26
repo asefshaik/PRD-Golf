@@ -15,7 +15,7 @@ export default function Landing() {
   }, [user, loading, navigate])
 
   const getStartButtonLink = () => {
-    return user ? '/dashboard' : '/signup'
+    return user ? '/dashboard' : '/register'
   }
 
   return (
@@ -93,7 +93,7 @@ export default function Landing() {
               <li style={{ marginBottom: '0.75rem', display: 'flex', gap: '0.5rem' }}>✓ <span>Entry to all monthly draws</span></li>
               <li style={{ marginBottom: '0.75rem', display: 'flex', gap: '0.5rem' }}>✓ <span>Min 10% charity contribution</span></li>
             </ul>
-            <Link to="/signup" className="btn btn-primary" style={{ width: '100%', padding: '1rem' }}>Subscribe Now</Link>
+            <Link to="/register" className="btn btn-primary" style={{ width: '100%', padding: '1rem' }}>Subscribe Now</Link>
           </div>
         </div>
       </section>
